@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Faizan Ahmed | Dubai Real Estate</title>
+  <meta name="description" content="Discover premium Dubai real estate with Faizan Ahmed. Luxury homes, investment opportunities and expert property guidance.">
+  <style>
+    :root{--bg:#090909;--panel:#121212;--gold:#d6b36a;--gold2:#f3dfad;--muted:#aaa49a;--white:#f7f4ed}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1160px,90%);margin:auto}
+    .topline{height:3px;background:linear-gradient(90deg,#80602b,var(--gold2),#80602b)}
+    header{position:sticky;top:0;z-index:10;background:rgba(9,9,9,.92);backdrop-filter:blur(14px);border-bottom:1px solid #29251d}
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-size:21px;letter-spacing:2px;color:var(--gold2);font-weight:bold}
+    .brand small{display:block;font:10px Arial,sans-serif;letter-spacing:4px;color:#b7a47c;margin-top:-4px}
+    .navlinks{display:flex;gap:28px;font:12px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:#ddd}
+    .navlinks a:hover{color:var(--gold)}
+    .nav-cta,.btn{display:inline-block;padding:12px 20px;border:1px solid var(--gold);color:var(--gold2);font:11px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;transition:.25s}
+    .nav-cta:hover,.btn:hover{background:var(--gold);color:#111}
+    .hero{min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 48%,#4a3920 0%,#211b12 23%,#0c0c0b 58%,#090909 78%)}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#090909 0%,rgba(9,9,9,.92) 36%,rgba(9,9,9,.18) 100%)}
+    .hero-art{position:absolute;right:4%;bottom:0;width:49%;height:88%;opacity:.8}
+    .tower{position:absolute;bottom:0;width:13%;background:linear-gradient(90deg,#171715,#b28b48 45%,#211b12);clip-path:polygon(35% 0,65% 0,65% 8%,100% 100%,0 100%);box-shadow:0 0 30px #c59b4b33}
+    .tower:before{content:"";position:absolute;inset:12% 25% 0;background:repeating-linear-gradient(0deg,transparent 0 17px,#d9bd7a55 18px 20px)}
+    .t1{height:68%;left:10%;width:19%}.t2{height:96%;left:42%;width:17%}.t3{height:54%;left:72%;width:18%}
+    .hero-content{position:relative;z-index:2;max-width:650px;padding:90px 0}
+    .eyebrow{font:11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+    h1{font-size:clamp(46px,7vw,82px);line-height:1.02;font-weight:normal;letter-spacing:-2px;margin-bottom:24px}
+    h1 span{color:var(--gold2);font-style:italic}
+    .hero p{max-width:510px;color:#c2bdb3;font:15px/1.9 Arial,sans-serif;margin-bottom:34px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .btn.fill{background:var(--gold);color:#111}
+    .stats{display:flex;gap:42px;margin-top:62px;padding-top:24px;border-top:1px solid #655333;max-width:510px}
+    .stat strong{display:block;color:var(--gold2);font-size:26px;font-weight:normal}
+    .stat span{font:10px Arial,sans-serif;color:#aaa;letter-spacing:1.4px;text-transform:uppercase}
+    section{padding:96px 0}
+    .section-head{text-align:center;margin-bottom:48px}
+    .section-head h2{font-size:clamp(32px,4vw,48px);font-weight:normal;margin-bottom:10px}
+    .section-head p{font:13px Arial,sans-serif;color:var(--muted)}
+    .gold-line{width:54px;height:1px;background:var(--gold);margin:18px auto}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .about-art{min-height:390px;background:linear-gradient(145deg,#4d3b20,#17140f 55%,#090909);border:1px solid #70572c;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .about-art:before{content:"DUBAI";font-size:clamp(50px,9vw,110px);letter-spacing:10px;color:#d7b46b22}
+    .about-art:after{content:"";position:absolute;width:60%;height:75%;bottom:-8%;border:1px solid #d6b36a88;transform:perspective(500px) rotateY(-18deg);box-shadow:0 0 70px #d6b36a22}
+    .about-copy h2{font-size:42px;font-weight:normal;line-height:1.15;margin-bottom:20px}
+    .about-copy h2 span{color:var(--gold2);font-style:italic}
+    .about-copy p{font:14px/1.9 Arial,sans-serif;color:#bcb7ad;margin-bottom:18px}
+    .properties{background:#0e0e0d}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .property{background:var(--panel);border:1px solid #30291e;transition:.25s}
+    .property:hover{transform:translateY(-6px);border-color:var(--gold)}
+    .property-art{height:220px;position:relative;overflow:hidden;background:linear-gradient(135deg,#66502d,#1a1a18 65%)}
+    .property-art:before{content:"";position:absolute;inset:15% 12% 0;background:repeating-linear-gradient(90deg,#0c0c0c 0 13px,#b9975b 14px 16px,#151515 17px 29px);clip-path:polygon(10% 0,90% 0,100% 100%,0 100%);opacity:.85}
+    .property-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#090909aa,transparent 60%)}
+    .tag{position:absolute;z-index:1;top:16px;left:16px;background:var(--gold);color:#111;padding:6px 10px;font:10px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase}
+    .property-info{padding:22px}
+    .property-info h3{font-size:23px;font-weight:normal;margin-bottom:7px}
+    .location{font:11px Arial,sans-serif;color:var(--muted);letter-spacing:1px;margin-bottom:18px}
+    .details{display:flex;justify-content:space-between;border-top:1px solid #393126;padding-top:15px;font:11px Arial,sans-serif;color:#c8c1b5}
+    .price{color:var(--gold2);font-size:18px;margin-top:18px}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .service{padding:30px 24px;border:1px solid #342c20;background:linear-gradient(145deg,#15130f,#0d0d0c)}
+    .service .num{color:var(--gold);font-size:30px}
+    .service h3{font-size:22px;font-weight:normal;margin:15px 0 8px}
+    .service p{font:13px/1.8 Arial,sans-serif;color:var(--muted)}
+    .contact{background:linear-gradient(120deg,#1c1710,#0a0a09 65%);text-align:center;border-top:1px solid #47371f;border-bottom:1px solid #47371f}
+    .contact h2{font-size:clamp(34px,5vw,54px);font-weight:normal;margin-bottom:14px}
+    .contact p{font:14px Arial,sans-serif;color:#bdb6aa;margin:0 auto 28px;max-width:570px}
+    footer{padding:28px 0;color:#827c72;font:11px Arial,sans-serif;letter-spacing:1px}
+    footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.navlinks{display:none}.hero{min-height:600px}.hero-art{right:-12%;width:75%;opacity:.48}.about-grid{grid-template-columns:1fr;gap:35px}.cards,.services-grid{grid-template-columns:1fr}.stats{gap:22px}.stat strong{font-size:22px}}
+    @media(max-width:460px){nav{height:68px}.brand{font-size:17px}.nav-cta{padding:10px 12px;font-size:9px}.hero-content{padding:75px 0}.stats{gap:15px}.stat span{font-size:8px}.about-art{min-height:260px}section{padding:70px 0}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#home">FAIZAN AHMED<small>DUBAI REAL ESTATE</small></a>
+        <div class="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#properties">Properties</a><a href="#services">Services</a></div>
+        <a class="nav-cta" href="#contact">Let's Talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-art"><div class="tower t1"></div><div class="tower t2"></div><div class="tower t3"></div></div>
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">Luxury Living · Exceptional Investment</div>
+          <h1>Find Your Place<br>in <span>Dubai.</span></h1>
+          <p>Discover exceptional homes and investment opportunities in one of the world's most exciting real estate destinations. Personal guidance, premium properties, and a seamless experience.</p>
+          <div class="hero-actions"><a class="btn fill" href="#properties">Explore Properties</a><a class="btn" href="#contact">Book a Consultation</a></div>
+          <div class="stats">
+            <div class="stat"><strong>01:1</strong><span>Personal Guidance</span></div>
+            <div class="stat"><strong>360°</strong><span>Property Support</span></div>
+            <div class="stat"><strong>UAE</strong><span>Local Insight</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="about-art" aria-label="Abstract gold Dubai-inspired architecture"></div>
+        <div class="about-copy">
+          <div class="eyebrow">Your Property Partner</div>
+          <h2>More than a property.<br><span>A better way to invest.</span></h2>
+          <p>I'm Faizan Ahmed. I help clients explore Dubai's real estate market with clarity, confidence, and a personal approach.</p>
+          <p>From understanding your goals to shortlisting the right opportunities, every step is focused on making your property journey smooth and informed.</p>
+          <a class="btn" href="#contact">Connect with Faizan</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="properties" id="properties">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Curated Opportunities</div><h2>Featured Properties</h2><div class="gold-line"></div><p>Explore sample property categories in Dubai.</p></div>
+        <div class="cards">
+          <article class="property"><div class="property-art"><span class="tag">Luxury Living</span></div><div class="property-info"><h3>Downtown Residences</h3><div class="location">DOWNTOWN DUBAI</div><div class="details"><span>1–3 Bedrooms</span><span>City Lifestyle</span></div><div class="price">Price on Request</div></div></article>
+          <article class="property"><div class="property-art"><span class="tag">Waterfront</span></div><div class="property-info"><h3>Marina Apartments</h3><div class="location">DUBAI MARINA</div><div class="details"><span>1–4 Bedrooms</span><span>Waterfront Living</span></div><div class="price">Price on Request</div></div></article>
+          <article class="property"><div class="property-art"><span class="tag">Private Living</span></div><div class="property-info"><h3>Signature Villas</h3><div class="location">PALM JUMEIRAH</div><div class="details"><span>3–6 Bedrooms</span><span>Private Community</span></div><div class="price">Price on Request</div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">A Seamless Experience</div><h2>How I Can Help</h2><div class="gold-line"></div></div>
+        <div class="services-grid">
+          <div class="service"><div class="num">01</div><h3>Property Buying</h3><p>Explore homes that align with your lifestyle, location preferences, and budget.</p></div>
+          <div class="service"><div class="num">02</div><h3>Investment Guidance</h3><p>Understand available opportunities, costs, and important considerations before deciding.</p></div>
+          <div class="service"><div class="num">03</div><h3>Personal Support</h3><p>Get clear communication and guidance throughout your property search journey.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="eyebrow">Start Your Dubai Journey</div>
+        <h2>Let's find the right property.</h2>
+        <p>Tell me what you're looking for. I'll help you take the next step with confidence.</p>
+        <!-- Replace the sample email address below with Faizan's real business email. -->
+        <a class="btn fill" href="mailto:YOUR-EMAIL@example.com?subject=Dubai%20Property%20Enquiry">Enquire Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>© <span id="year"></span> FAIZAN AHMED · DUBAI REAL ESTATE</span><span>Luxury • Clarity • Confidence</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
